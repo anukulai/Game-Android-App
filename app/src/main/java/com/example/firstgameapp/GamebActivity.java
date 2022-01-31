@@ -7,25 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Page2Activity extends AppCompatActivity {
+public class GamebActivity extends AppCompatActivity {
 
-    private Button btnGameB;
+    private Button startGameB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page_2);
+        setContentView(R.layout.gameb);
 
-
-        btnGameB = (Button) findViewById(R.id.gameB);
-        btnGameB.setOnClickListener(new View.OnClickListener() {
+        startGameB = (Button) findViewById(R.id.startGameB);
+        startGameB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openGameBStartPage();
+                openGameB();
             }
         });
     }
-    public void openGameBStartPage(){
-        Intent intent = new Intent(this, GamebActivity.class);
+    public void openGameB(){
+        Intent intent = new Intent(this, RandomAnimalActivity.class);
         startActivity(intent);
     }
 }
