@@ -2,6 +2,7 @@ package com.example.firstgameapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
@@ -12,6 +13,7 @@ public class RandomAnimalActivity extends AppCompatActivity {
 
     int counter = 0;
     int time = 0;
+    int answer = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,21 +39,35 @@ public class RandomAnimalActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
-                    if(counter > 60000){
-                        System.exit(0);
-                    }
+                    if(counter > 60){
+                        System.out.println(answer-1);
+                        Intent i = new Intent(getApplicationContext(), GameBUserInput.class);
+                        Bundle bundle = new Bundle();
+                        String ans = String.valueOf(answer);
+                        bundle.putString("answer", ans);
+                        i.putExtras(bundle);
+                        startActivity(i);
+                        setContentView(R.layout.activity_game_buser_input);
+                        handler.removeCallbacksAndMessages(null);
 
+                    }
+                    else {
                         counter = counter + time;
+                        answer = answer + 1;
                         displayImage(r, images);
                         time = rand.nextInt(2000) + 1000;
                         handler.postDelayed(this, time);
 
-                        System.out.println("In run Method"+counter);
+                        System.out.println("In run Method" + counter);
                         handler.removeCallbacksAndMessages(null);
                         handler.postDelayed(this, time);
+                    }
+//                        System.out.println(answer);
 
                 }
             }, 1);
+
+            System.out.println(answer);
 
         }
 

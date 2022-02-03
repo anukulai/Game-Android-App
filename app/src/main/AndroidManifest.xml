@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstGameApp">
         <activity
+            android:name=".GameBUserInput"
+            android:exported="false" />
+        <activity
             android:name=".RandomAnimalActivity"
             android:exported="false" />
         <activity
