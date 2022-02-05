@@ -23,15 +23,22 @@ public class RandomAnimalActivity extends AppCompatActivity {
         ImageView r = (ImageView) findViewById(R.id.RI);
         Random rand = new Random();
         Integer[] images = {
-                R.drawable.m1,
-                R.drawable.m2,
-                R.drawable.m3,
-                R.drawable.m4,
-                R.drawable.m5,
-                R.drawable.m6,
-                R.drawable.m7,
-                R.drawable.m8,
-                R.drawable.m9
+                R.drawable.dog1,
+                R.drawable.dog2,
+                R.drawable.dog3,
+                R.drawable.dog4,
+                R.drawable.dog5,
+                R.drawable.dog6,
+                R.drawable.dog7,
+                R.drawable.dog8,
+                R.drawable.dog9,
+                R.drawable.dog10,
+                R.drawable.dog11,
+                R.drawable.dog12,
+                R.drawable.dog13,
+                R.drawable.dog14,
+                R.drawable.dog15,
+                R.drawable.dog16
         };
 
             Handler handler = new Handler();
@@ -39,7 +46,7 @@ public class RandomAnimalActivity extends AppCompatActivity {
                 @Override
                 public void run() {
 
-                    if(counter > 60){
+                    if(counter > 60000){
                         System.out.println(answer-1);
                         Intent i = new Intent(getApplicationContext(), GameBUserInput.class);
                         Bundle bundle = new Bundle();

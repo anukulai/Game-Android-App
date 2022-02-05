@@ -24,9 +24,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="52dp"
+        android:padding="10dp"
         android:layout_marginBottom="142dp"
         android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:text="Welcome to Nerosha and Anushree's Game!" />
 
     <Button
@@ -37,6 +40,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="162dp"
         android:layout_marginBottom="39dp"
+        android:background="@color/blue"
         android:text="OK" />
 
 

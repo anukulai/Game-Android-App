@@ -1,56 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Page2Activity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:text="MENU"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="84dp" />
-
     <Button
         android:id="@+id/gameA"
-        android:layout_width="144dp"
-        android:layout_height="77dp"
-        android:text="GAME A"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:outlineSpotShadowColor="@color/yellow"
+        android:textColor="@color/yellow"
+        android:padding="25dp"
+        android:textSize="20sp"
+        android:text="GAME A" />
 
     <Button
         android:id="@+id/gameB"
-        android:layout_width="144dp"
-        android:layout_height="78dp"
-        android:text="GAME B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="131dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="257dp"
+        android:outlineSpotShadowColor="@color/yellow"
+        android:textColor="@color/yellow"
+        android:padding="25dp"
+        android:textSize="20sp"
+        android:text="GAME B" />
 
     <Button
         android:id="@+id/showScore"
-        android:layout_width="149dp"
-        android:layout_height="64dp"
-        android:text="Show Score"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="477dp" />
-
-    <Button
-        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="644dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="397dp"
+        android:padding="25dp"
+        android:textSize="16sp"
+        android:text="Show Score" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/backfromPage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="537dp"
+        android:padding="25dp"
+        android:textSize="16sp"
+        android:text="Back" />
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Page2Activity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="MENU"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="84dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/gameA"-->
+<!--        android:layout_width="144dp"-->
+<!--        android:layout_height="77dp"-->
+<!--        android:text="GAME A"-->
+<!--        tools:layout_editor_absoluteX="127dp"-->
+<!--        tools:layout_editor_absoluteY="197dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/gameB"-->
+<!--        android:layout_width="144dp"-->
+<!--        android:layout_height="78dp"-->
+<!--        android:text="GAME B"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:layout_editor_absoluteX="131dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/showScore"-->
+<!--        android:layout_width="149dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:text="Show Score"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="477dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Back"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:layout_editor_absoluteY="644dp" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
