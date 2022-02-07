@@ -1,17 +1,6 @@
-//package com.example.firstgameapp;
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//import android.os.Bundle;
-//
-//public class Questions extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_questions);
-//    }
-//}
+//This Activity includes
+//functions for 5 quiz questions
+//Answers are bundled and sent using intent to the next activity
 
 package com.example.firstgameapp;
 

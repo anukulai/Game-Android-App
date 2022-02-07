@@ -1,3 +1,8 @@
+//This function includes:
+//shows the result of the Game A
+// Results includes the score out of 5
+//And the correct answers, user's selected answers and if they are true or false
+
 package com.example.firstgameapp;
 
 import androidx.appcompat.app.AppCompatActivity;

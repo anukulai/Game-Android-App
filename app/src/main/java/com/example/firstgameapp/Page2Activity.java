@@ -1,3 +1,8 @@
+//This Activity consists of
+//Button for navigating from menu to Game A, Game B, Score Board
+//Score board shows the last played gam's score
+//Back Button goes back the homepage. (Main Activity)
+
 package com.example.firstgameapp;
 
 import androidx.appcompat.app.AppCompatActivity;
